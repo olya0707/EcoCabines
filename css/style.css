@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu-toggle {
-  cursor: pointer;
+  cursor: pointer
   display: none;
 }
 
@@ -195,7 +195,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-page {
   padding: 185px 0 240px 0;
-  background-image: url(/img/hero.png);
+  background-image: URL('../img/hero.png');
   background-position: top center;
   background-attachment: fixed;
   min-height: 600px;
