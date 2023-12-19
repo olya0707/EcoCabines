@@ -1,0 +1,160 @@
+@import 'nullstyle';
+@import 'header';
+@import 'main';
+@import 'footer';
+@import url(https://fonts.googleapis.com/css?family=Rubik:regular,500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:900&display=swap);
+
+body {
+  font-family: Rubik;
+  color: #646d70;
+}
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+[class*='__container'] {
+  max-width: 844px;
+  margin: 0px auto;
+  padding: 0 15px;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+.footer {
+ 
+}
+
+@media screen and (max-width:840px) and (min-width:700px) {
+  .hero-page {
+  padding: 185px 0 140px 0;
+  height: auto;
+  position: relative;
+ 
+}
+  .privilege__container {
+  display: flex;
+    gap: 20px;
+}
+  .privilege__content {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+.privilege__photo {
+  flex: 0 0 318px;
+  height: 334px;
+
+}
+  
+}
+@media screen and (max-width: 700px) {
+  .header__menu {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header__button {
+    flex: 0 0 20px;
+  }
+  .menu__list.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+   .menu__list {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  /*========*/
+  .hero-page {
+  padding: 185px 0 10px 0;
+
+  height: auto;
+  position: relative;
+ 
+}
+  .hero-page__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-page__content {
+    max-width: 100%;
+    text-align: center;
+    flex: 0 0 auto;
+  }
+  .hero-page__video {
+    padding: 20px;
+    width: 100%;
+  }
+  
+ /*===================*/
+  
+  .material__container {
+    height: auto;
+  }
+  .content-material {
+    padding: 20px 45px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content-material__body {
+    margin: 0 auto;
+    position: static;
+    padding: 20px 20px 20px 20px;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+  .content-material__text {
+    width: 100%;
+  }
+  .button-material {
+    margin: 0 auto;
+  }
+
+  .content-material__photo {
+    position: static;
+    margin: 0px auto;
+
+  }
+  /*=================*/
+  .innovation {
+    padding: 20px;
+  }
+  .innovation__text {
+    flex-wrap: wrap;
+  }
+  /*=================*/
+  .privilege {
+  padding: 20px 0;
+}
+.privilege__container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+ }
+ .privilege__content {
+  justify-content: center;
+}
+/*==================*/
+.footer__other {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+}

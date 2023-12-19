@@ -1,0 +1,113 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+  transition: background-color 0.3s ease, height 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+  z-index: 100;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  height: 105px;
+}
+.header__logo {
+}
+.logo {
+  transition: all 0.3s;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    transform: scale(0.1, 1);
+  }
+
+  &:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+  }
+  &:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+  }
+}
+.header__menu {
+  justify-content: flex-end;
+  flex: 1 1 auto;
+}
+.header__button {
+  flex: 0 0 153px;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu__list {
+  display: flex;
+  gap: 40px;
+}
+.menu__list li:hover {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+.menu__item {
+  align-items: flex-end;
+}
+.menu__link {
+  color: #fff;
+  font-size: 12px;
+}
+
+.button-header {
+  display: inline-block;
+  font-size: 12px;
+  padding: 10px 21.5px;
+  border-radius: 4px;
+  background-color: #fff;
+  text-align: center;
+  color: #606b74;
+  transition: all 0.5s;
+  &:hover {
+    background-color: #606b74;
+    opacity: 0.8;
+    color: #fff;
+  }
+}

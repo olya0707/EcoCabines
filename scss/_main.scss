@@ -1,0 +1,215 @@
+.hero-page {
+  padding: 185px 0 240px 0;
+  background-image: url(/img/hero.png);
+  background-position: top center;
+  background-attachment: fixed;
+  min-height: 600px;
+  position: relative;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.hero-page__container {
+  display: flex;
+}
+.hero-page__content {
+  flex: 0 0 438px;
+}
+.hero-page__lable {
+  color: #fff;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 12px;
+}
+.hero-page__title {
+  color: #fff;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Merriweather;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+.hero-page__video {
+  width: 376px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__hero-page {
+  color: #fff;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 500;
+  align-items: center;
+  background: url(/img/play__hero-page.svg) left no-repeat;
+  padding: 15px 15px 15px 42px;
+  transition: all 0.5s;
+}
+.video__hero-page:hover {
+  background-color: #222f33;
+  opacity: 0.6;
+  border-radius: 5px;
+}
+/*===========================================*/
+.material-page {
+}
+.material {
+}
+.material-bg {
+}
+.material__container {
+  height: 223px;
+}
+.material__content {
+}
+.content-material {
+  display: flex;
+}
+.content-material__body {
+  width: 616px;
+  height: 400px;
+  padding: 62px 116px 57px 100px;
+  background-color: #fff;
+  position: relative;
+  margin: -37px -41px -150px -100px;
+}
+.content-material__title {
+  color: #222f33;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Merriweather;
+  font-size: 30px;
+  font-weight: 900;
+  padding-bottom: 13px;
+}
+.content-material__text {
+  font-weight: 400;
+  line-height: 26px;
+  padding-bottom: 13px;
+  width: 400px;
+}
+.content-material__button {
+  display: flex;
+}
+.button-material {
+  display: block;
+  font-size: 12px;
+  padding: 10px 14.5px;
+  border-radius: 4px;
+  background-color: #fff;
+  text-align: center;
+  color: #606b74;
+  border: 1px solid #606b74;
+  transition: all 0.5s;
+  &:hover {
+    background-color: #606b74;
+    opacity: 0.8;
+    color: #fff;
+  }
+}
+.content-material__photo {
+  position: relative;
+  margin-top: -76px;
+  margin-bottom: -66px;
+  max-width: 324px;
+}
+.photo {
+}
+.photo__slider {
+  max-width: 324px;
+}
+.slide {
+  max-width: 324px;
+  min-width: 0;
+  height: 365px;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*=======================================*/
+.innovation {
+  z-index: 2;
+  background-color: #222f33;
+  border: 1px solid var(--Color-Dark-green, #222f33);
+  padding: 210px 0 81px 0;
+}
+.innovation__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.innovation__title {
+  color: #fff;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Merriweather;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+.innovation__text {
+  color: #fff;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.75;
+  display: flex;
+  gap: 43px;
+}
+.innovation__text1 {
+}
+.innovation__text2 {
+}
+/*==================================*/
+.privilege {
+  padding: 85px 0 56px 0;
+}
+.privilege__container {
+  display: flex;
+  gap: 75px;
+}
+.privilege__photo {
+  flex: 0 0 355px;
+  height: 362px;
+}
+.photo-privilege {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.privilege__content {
+  display: flex;
+  gap: 60px;
+  padding: 8px 0 8px 0;
+}
+.privilege__column-1 {
+}
+.column-privilege {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+.column-privilege__block-text-1 {
+}
+.block-text {
+  width: 155px;
+}
+.block-text__title {
+  color: #222f33;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Merriweather;
+  font-size: 18px;
+  font-weight: 900;
+  padding-bottom: 4px;
+}
+.block-text__text {
+  color: #646d70;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+}
