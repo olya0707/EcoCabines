@@ -527,6 +527,12 @@ body {
   .menu-toggle {
     display: block;
   }
+
+
+.bar {
+  display: block;
+  
+}
   .menu__list {
     display: none;
     flex-direction: column;
